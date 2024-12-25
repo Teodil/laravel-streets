@@ -46,4 +46,11 @@ services:
     volumes:
       - ./src:/var/www/laravel
     entrypoint: ["php","/var/www/laravel/artisan"]
+
+  node:
+    build:
+      context: dockerfiles
+      dockerfile: node.dockerfile
+    volumes:
+      - ./src:/var/www/laravel
   
