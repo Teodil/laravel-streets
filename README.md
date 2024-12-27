@@ -2,7 +2,7 @@
 ### Запуск проекта (php, nginx, postgres)
 
 ```bash
-   docker-compose nginx -d
+   docker-compose run nginx -d
 ```
 Composer
 ```bash
