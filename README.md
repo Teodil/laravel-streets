@@ -12,7 +12,13 @@ Composer
 ```bash
     docker-compose run --rm artisan migrate
 ```
-Пример запуска Seeder
+Запуск Seeder
+```bash
+    docker-compose run --rm artisan db:seed --class=RegionsSeeder
+```
+```bash
+    docker-compose run --rm artisan db:seed --class=CitiesSeeder
+```
 ```bash
     docker-compose run --rm artisan db:seed --class=StreetsSeeder
 ```
