@@ -6,20 +6,20 @@
 ```
 Composer
 ```bash
-    docker-compose run composer install
+    docker-compose run --rm composer install
 ```
 Запуск мигрцаии
 ```bash
-    docker-compose run artisan migrate
+    docker-compose run --rm artisan migrate
 ```
 Пример запуска Seeder
 ```bash
-    docker-compose run artisan db:seed --class=StreetsSeeder
+    docker-compose run --rm artisan db:seed --class=StreetsSeeder
 ```
 Node.js
 ```bash
-    docker-compose run node npm i
-    docker-compose run node npm run build
+    docker-compose run --rm node npm i
+    docker-compose run --rm node npm run build
 ```
 
 ### Примечание
