@@ -21,7 +21,7 @@ USER www-data
 
 
 # Указываем, что будет запущено по умолчанию
-CMD bash -c "cd /var/www/laravel && npm install && php-fpm"
+CMD bash -c "php-fpm"
 
 # Открываем порт для PHP-FPM
 EXPOSE 9000
